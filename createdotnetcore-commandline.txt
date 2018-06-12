@@ -1,0 +1,48 @@
+create calc app directory: 
+CalculatorApp directory 
+
+run: 
+dotnet new sln
+
+create directory: 
+ CalculatorApp.Services
+
+run: 
+dotnet new classlib
+
+navigate to main directory: 
+
+run: 
+dotnet sln add .\calculatorapp.services\calculatorapp.services.csproj 
+
+inside CalculatorApp.Services 
+change class1 to Calculator.cs 
+
+
+using System;
+namespace calculatorapp.services
+{
+    public class Calculator
+    {
+        public int Add(int num1, int num2)
+        {
+            throw new NotImplementedException();
+        }
+        public int Sub(int num1, int num2)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
+
+create directory: 
+CalculatorApp.Services.Tests 
+
+run: 
+
+dotnet add reference ../CalculatorApp.Services/CalculatorApp.Services.csproj
+
+navigate to root :
+
+run: 
+dotnet sln add .\CalculatorApp.Services.Tests\CalculatorApp.Services.Tests.csproj 

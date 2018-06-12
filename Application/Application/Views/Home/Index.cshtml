@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="~/js/Calculate.js">
+</script>
+<body>
+    
+        <div>
+            <div class="box">
+                <div class="display"><input type="text" readonly size="15" id="display"></div>
+                <div class="keys">
+                    <p>
+                        <input type="button" class="button gray" value="mrc" onclick='Calculate("")'><input type="button" class="button gray" style="visibility:hidden" value="mrc" onclick='c("")'><input type="button" class="button gray" style="visibility:hidden" value="mrc" onclick='c("")'><input type="button" class="button pink" value="/" onclick='PassValue("/")'>
+                    </p>
+                    <p>
+                        <input type="button" class="button black" value="7" onclick='PassValue("7")'><input type="button" class="button black" value="8" onclick='PassValue("8")'><input type="button" class="button black" value="9" onclick='PassValue("9")'><input type="button" class="button pink" value="*" onclick='PassValue("*")'>
+                    </p>
+                    <p>
+                        <input type="button" class="button black" value="4" onclick='PassValue("4")'><input type="button" class="button black" value="5" onclick='PassValue("5")'><input type="button" class="button black" value="6" onclick='PassValue("6")'><input type="button" class="button pink" value="-" onclick='PassValue("-")'>
+                    </p>
+                    <p>
+                        <input type="button" class="button black" value="1" onclick='PassValue("1")'><input type="button" class="button black" value="2" onclick='PassValue("2")'><input type="button" class="button black" value="3" onclick='PassValue("3")'><input type="button" class="button pink" value="+" onclick='PassValue("+")'>
+                    </p>
+                    <p>
+                        <input type="button" class="button black" value="0" onclick='PassValue("0")'><input type="button" class="button black" value="." onclick='PassValue(".")'><input type="button" class="button black" value="C" onclick='Calculate("")'><input type="button" class="button orange" value="=" onclick='e()'>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+    
